@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Units Practice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+
+    .main {
+      background-color: #f0f4f8;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      text-align: center;
+      font-weight: 600;
+      padding: 1rem;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .rem-box {
+      background-color: #6c5ce7;
+      padding: 2rem;
+      max-width: 200px;
+      height: 14cm;
+    }
+
+    .vwvh-box {
+      background-color: #00b894;
+      width: 15vw;
+      height: 30vh;
+    }
+
+    .percent-box {
+      background-color: #e17055;
+      width: 18%;
+      height: 200px;
+    }
+
+    .vmin-box {
+      background-color: #fd79a8;
+      width: 25vmin;
+      height: 63vmin;
+    }
+
+    .em-box {
+      background-color: #0984e3;
+      width: 10em;
+      font-size: 1.5em;
+      height: 13cm;
+    }
+
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1><u>CSS Units Practice</u></h1>
+    <div class="container">
+      <div class="box rem-box">
+        <p>This box uses <br><strong>rem</strong> for padding and <strong>px</strong> for max-width</p>
+      </div>
+      <div class="box vwvh-box">
+        <p>This box uses <br><strong>vw</strong> for width <br>and <strong>vh</strong> for height</p>
+      </div>
+      <div class="box percent-box">
+        <p>This box uses <br><strong>%</strong> for width and height</p>
+      </div>
+      <div class="box vmin-box">
+        <p>This box uses <br><strong>vmin</strong> for width and height</p>
+      </div>
+      <div class="box em-box">
+        <p>This box uses <br><strong>em</strong> for width <br>and font-size</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
